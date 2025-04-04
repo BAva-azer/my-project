@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🌈 Daily Mood Tracker</h1>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <main>
+        <h2>Select Your Mood:</h2>
+        <div class="mood-container">
+            <button class="mood-btn" data-mood="happy" data-color="#FFD700">😊 Happy</button>
+            <button class="mood-btn" data-mood="sad" data-color="#1E90FF">😢 Sad</button>
+            <button class="mood-btn" data-mood="excited" data-color="#FF4500">🤩 Excited</button>
+            <button class="mood-btn" data-mood="calm" data-color="#32CD32">😌 Calm</button>
+            <button class="mood-btn" data-mood="angry" data-color="#DC143C">😡 Angry</button>
+            <button class="mood-btn" data-mood="relaxed" data-color="#87CEEB">🧘 Relaxed</button>
+        </div>
+
+        <h2>Mood History:</h2>
+        <ul id="mood-history"></ul>
+
+        <button id="clear-history">❌ Clear History</button>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ | © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
